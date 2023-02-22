@@ -121,7 +121,7 @@ button {
 
 .container {
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 4fr 1fr;
     gap: 50px;
     padding: 1rem;
 }
@@ -164,12 +164,38 @@ h1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    padding: 30px 40px;
+    padding: 30px 20px;
     border-radius: 16px;
+}
+
+.announcements div {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .announcements div:nth-child(2), .announcements div:nth-child(3) {
     border-top: 1px solid black;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.trending {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 30px 20px;
+    border-radius: 16px;
+}
+
+.trending div {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 25px 25px;
+    column-gap: 20px;
+}
+
+.trending div img {
+    grid-row: span 2;
 }
