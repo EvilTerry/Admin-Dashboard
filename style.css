@@ -1,5 +1,5 @@
 :root {
-    --bg-color: white;
+    --bg-color: #efeff5;
     --main-color: rgb(25, 146, 212);
 }
 
@@ -10,12 +10,12 @@ body {
 }
 
 main {
-    margin-left: 20rem;
+    margin-left: 25rem;
 }
 
 .sidenav {
     background-color: var(--main-color);
-    width: 20rem;
+    width: 25rem;
     height: 100%;
     z-index: 1;
     top: 0;
@@ -64,7 +64,7 @@ a {
 }
 
 .header {
-    background-color: aliceblue;
+    background-color: white;
 }
 
 .top_header {
@@ -83,7 +83,7 @@ input {
     height: 25px;
     border-radius: 1rem;
     border: none;
-    background-color: lightgray;
+    background-color: var(--bg-color);
 }
 
 .bottom_header {
@@ -122,4 +122,54 @@ button {
 .container {
     display: grid;
     grid-template-columns: 5fr 1fr;
+    gap: 50px;
+    padding: 1rem;
+}
+
+.title {
+    padding: 10px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: inset 5px 0px gold;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: auto auto 50px;
+    padding: 24px;
+}
+
+.card-images {
+    align-self: end;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.announcements {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 30px 40px;
+    border-radius: 16px;
+}
+
+.announcements div:nth-child(2), .announcements div:nth-child(3) {
+    border-top: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
