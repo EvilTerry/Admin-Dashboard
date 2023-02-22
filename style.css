@@ -6,15 +6,16 @@
 body {
     background-color: var(--bg-color);
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
-    margin-left: 200px;
+    margin-left: 20rem;
 }
 
 .sidenav {
     background-color: var(--main-color);
-    width: 200px;
+    width: 20rem;
     height: 100%;
     z-index: 1;
     top: 0;
@@ -22,8 +23,41 @@ main {
     position: fixed;
     overflow-x: hidden;
     color: white;
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
+.sidenav > li {
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    gap: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+    color: white;
+}
 
 .header {
     background-color: aliceblue;
