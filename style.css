@@ -1,6 +1,6 @@
 :root {
-    --bg-color: #1A1A1D;
-    --main-color: cornflowerblue;
+    --bg-color: white;
+    --main-color: rgb(25, 146, 212);
 }
 
 body {
@@ -21,9 +21,26 @@ main {
     left: 0;
     position: fixed;
     overflow-x: hidden;
+    color: white;
 }
 
 
 .header {
     background-color: aliceblue;
+}
+
+.top_header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bottom_header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: column;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
 }
